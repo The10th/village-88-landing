@@ -1,0 +1,273 @@
+//out: style.css
+
+@import 'colors';
+.navbar{
+  margin-top:1%;
+  margin-bottom:0px;
+  border-radius:0px !important;
+  border-bottom:4px solid @dojo-orange;
+}
+
+i{
+  color:@dojo-orange;
+}
+.arrow-icon{
+  position:absolute;
+  margin-top:-63px;
+  transform:rotate(-119deg);
+}
+.arrow-msg{
+  top:-5px;
+  margin-left:78%;
+  color:@dojo-orange;
+  position:absolute;
+}
+span{
+  color:@dojo-orange;
+}
+
+
+// .arrow{
+//   border-radius:55px;
+//   margin-left:85%;
+//   position:absolute;
+//   border:2px solid @dojo-orange;
+//   content:"";
+//   width:2px;
+//   height:50px;
+// }
+
+
+.vr{
+  margin-top:1%;
+  margin-bottom:2.5%;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+  content:"";
+  border:1px solid @dojo-orange;
+}
+
+.vbreak{
+
+  margin-left:auto;
+  height:35%;
+  width:0px;
+  content:"";
+  border:1px solid @dojo-orange;
+
+}
+
+.dotted{
+  margin-top:75px;
+  margin-left:65%;
+  content:"";
+  position:absolute;
+  border:3px dashed @dojo-orange;
+  width:65%;
+}
+
+.dotted2{
+  margin-top:75px;
+  margin-left:65%;
+  content:"";
+  position:absolute;
+  border:3px dashed @dojo-orange;
+  width:65%;
+}
+
+.btn-quote{
+  border-radius:0px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:@dojo-orange;
+  a{
+    color:white;
+    &:hover{
+      color:darkgray;
+      text-decoration:none;
+    }
+  }
+}
+
+.dottedV{
+  margin-left:auto;
+  margin-right:auto;
+  content:"";
+  border:3px dashed @dojo-orange;
+  height:70px;
+  width:0%;
+}
+.dottedC{
+  margin-top:75px;
+  margin-left:65%;
+  content:"";
+  position:absolute;
+  border:3px dashed @dojo-orange;
+  width:5%;
+}
+
+.jumbotron{
+  margin-top:0px;
+  border-radius:0px !important;
+  background:url(../img/top-down-desk.jpg) center no-repeat;
+  background-size:cover;
+
+  .banner{
+    width:100%;
+    h1, h2, h3 {
+      text-align:center;
+    }
+    color:white;
+  }
+  .contact{
+    margin-left:auto;
+    margin-right:5%;
+    width:55%;
+    [disabled], [selected]{
+      color: @dojo-orange-light;
+    }
+    ::-webkit-input-placeholder {
+      color: @dojo-orange-light;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+      color: @dojo-orange;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: @dojo-orange;
+    }
+
+    :-ms-input-placeholder {
+      color: @dojo-orange;
+    }
+
+
+      label{
+        margin-top:2%;
+        margin-bottom:0px;
+        color:white;
+      }
+        input, select, textarea,{
+          color:@dojo-orange;
+          border:none;
+          border-radius:0px;
+          -webkit-border-radius:0px !important;
+          -webkit-appearance: none;
+          -moz-appearance:    none;
+          appearance:         none;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+        }
+        textarea{
+          height:15%;
+        }
+      }
+      button{
+        background-color:@dojo-orange;
+        color:white;
+        border:none;
+        margin-top:2.5%;
+      }
+    }
+
+    section{
+      h1 {
+        text-align:center;
+      }
+      img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .process{
+        h3{
+          text-align:center;
+        }
+        i{
+          margin-top:50px;
+        }
+
+      }
+    }
+
+    #about{
+      i:nth-child(-n+3){
+        margin-right:5%;
+      }
+      padding:3%;
+
+    }
+
+
+
+    .carousel {
+      height:50%;
+      width:60%;
+      margin-right:auto;
+      margin-left:auto;
+      margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+      height:100%;
+      background-color: #777;
+    }
+
+    .carousel-inner{
+      border-radius:10px;
+    }
+    .carousel-inner > .item > img {
+      border-radius:10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 100%;
+    }
+
+    .carousel-control.left, .carousel-control.right {
+      background-image:none !important;
+    }
+
+    #projects{
+      i, span{
+        color:@dojo-orange-light;
+      }
+      h1{
+        color:white;
+      }
+      background:@dojo-orange;
+    }
+
+    // media queries
+
+    @media screen and (min-width:992px) and (max-width:1220px){
+      .dotted, .dotted2{
+        width:60%;
+      }
+
+    }
+
+    @media screen and (min-width:300px) and (max-width:991px){
+      .dotted, .dotted2, .dottedV, .dottedC, .vbreak, .arrow-msg, .arrow-icon{
+        display:none !important;
+      }
+      .contact{
+        margin-right:auto !important;
+      }
+    }
+
+    footer{
+      background:@dojo-orange;
+      height:25px;
+      width:100%;
+    }

@@ -1,0 +1,237 @@
+.navbar {
+  margin-top: 1%;
+  margin-bottom: 0px;
+  border-radius: 0px !important;
+  border-bottom: 4px solid #ff6202;
+}
+i {
+  color: #ff6202;
+}
+.arrow-icon {
+  position: absolute;
+  margin-top: -63px;
+  transform: rotate(-119deg);
+}
+.arrow-msg {
+  top: -5px;
+  margin-left: 78%;
+  color: #ff6202;
+  position: absolute;
+}
+span {
+  color: #ff6202;
+}
+.vr {
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  content: "";
+  border: 1px solid #ff6202;
+}
+.vbreak {
+  margin-left: auto;
+  height: 35%;
+  width: 0px;
+  content: "";
+  border: 1px solid #ff6202;
+}
+.dotted {
+  margin-top: 75px;
+  margin-left: 65%;
+  content: "";
+  position: absolute;
+  border: 3px dashed #ff6202;
+  width: 65%;
+}
+.dotted2 {
+  margin-top: 75px;
+  margin-left: 65%;
+  content: "";
+  position: absolute;
+  border: 3px dashed #ff6202;
+  width: 65%;
+}
+.btn-quote {
+  border-radius: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff6202;
+}
+.btn-quote a {
+  color: white;
+}
+.btn-quote a:hover {
+  color: darkgray;
+  text-decoration: none;
+}
+.dottedV {
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  border: 3px dashed #ff6202;
+  height: 70px;
+  width: 0%;
+}
+.dottedC {
+  margin-top: 75px;
+  margin-left: 65%;
+  content: "";
+  position: absolute;
+  border: 3px dashed #ff6202;
+  width: 5%;
+}
+.jumbotron {
+  margin-top: 0px;
+  border-radius: 0px !important;
+  background: url(../img/top-down-desk.jpg) center no-repeat;
+  background-size: cover;
+}
+.jumbotron .banner {
+  width: 100%;
+  color: white;
+}
+.jumbotron .banner h1,
+.jumbotron .banner h2,
+.jumbotron .banner h3 {
+  text-align: center;
+}
+.jumbotron .contact {
+  margin-left: auto;
+  margin-right: 5%;
+  width: 55%;
+}
+.jumbotron .contact [disabled],
+.jumbotron .contact [selected] {
+  color: #ff9500;
+}
+.jumbotron .contact ::-webkit-input-placeholder {
+  color: #ff9500;
+}
+.jumbotron .contact :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ff6202;
+}
+.jumbotron .contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ff6202;
+}
+.jumbotron .contact :-ms-input-placeholder {
+  color: #ff6202;
+}
+.jumbotron .contact label {
+  margin-top: 2%;
+  margin-bottom: 0px;
+  color: white;
+}
+.jumbotron .contact input,
+.jumbotron .contact select,
+.jumbotron .contact textarea {
+  color: #ff6202;
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.jumbotron .contact textarea {
+  height: 15%;
+}
+.jumbotron button {
+  background-color: #ff6202;
+  color: white;
+  border: none;
+  margin-top: 2.5%;
+}
+section h1 {
+  text-align: center;
+}
+section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .process h3 {
+  text-align: center;
+}
+section .process i {
+  margin-top: 50px;
+}
+#about {
+  padding: 3%;
+}
+#about i:nth-child(-n+3) {
+  margin-right: 5%;
+}
+.carousel {
+  height: 50%;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100%;
+  background-color: #777;
+}
+.carousel-inner {
+  border-radius: 10px;
+}
+.carousel-inner > .item > img {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+}
+#projects {
+  background: #ff6202;
+}
+#projects i,
+#projects span {
+  color: #ff9500;
+}
+#projects h1 {
+  color: white;
+}
+@media screen and (min-width: 992px) and (max-width: 1220px) {
+  .dotted,
+  .dotted2 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  .dotted,
+  .dotted2,
+  .dottedV,
+  .dottedC,
+  .vbreak,
+  .arrow-msg,
+  .arrow-icon {
+    display: none !important;
+  }
+  .contact {
+    margin-right: auto !important;
+  }
+}
+footer {
+  background: #ff6202;
+  height: 25px;
+  width: 100%;
+}
