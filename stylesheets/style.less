@@ -26,18 +26,6 @@ span{
   color:@dojo-orange;
 }
 
-
-// .arrow{
-//   border-radius:55px;
-//   margin-left:85%;
-//   position:absolute;
-//   border:2px solid @dojo-orange;
-//   content:"";
-//   width:2px;
-//   height:50px;
-// }
-
-
 .vr{
   margin-top:1%;
   margin-bottom:2.5%;
@@ -85,10 +73,17 @@ span{
   a{
     color:white;
     &:hover{
-      color:darkgray;
       text-decoration:none;
     }
   }
+      &:hover{
+        border:1px solid @dojo-orange;
+        background-color: white;
+        a{
+          color:@dojo-orange;
+        }
+      }
+
 }
 
 .dottedV{
@@ -108,12 +103,6 @@ span{
   width:5%;
 }
 
-.jumbotron{
-  margin-top:0px;
-  border-radius:0px !important;
-  background:url(../img/top-down-desk.jpg) center no-repeat;
-  background-size:cover;
-
   .banner{
     width:100%;
     h1, h2, h3 {
@@ -121,6 +110,12 @@ span{
     }
     color:white;
   }
+
+.indextron{
+  margin-top:0px;
+  border-radius:0px !important;
+  background:url(../img/stock_imgs/top-down-desk.jpg) center no-repeat;
+  background-size:cover;
   .contact{
     margin-left:auto;
     margin-right:5%;
@@ -174,6 +169,18 @@ span{
       }
     }
 
+    .success{
+      border-bottom:4px solid @dojo-orange;
+      background:url(../img/stock_imgs/iphoney.jpeg) center no-repeat;
+      background-size: cover;
+      text-align: center;
+      color:white;
+      height:700px;
+      .btn-quote{
+        margin-top: 30px;
+      }
+    }
+
     section{
       h1 {
         text-align:center;
@@ -201,8 +208,6 @@ span{
       padding:3%;
 
     }
-
-
 
     .carousel {
       height:50%;
@@ -248,7 +253,26 @@ span{
       background:@dojo-orange;
     }
 
+    footer{
+      background:@dojo-orange;
+      height:25px;
+      width:100%;
+    }
+
     // media queries
+
+        @media screen and (min-width:400px) and (max-width:767px){
+          .success{
+            .banner{
+              padding:2%; 
+              background: rgba(55,55,55,.7) !important;
+              .btn-quote{
+                margin-bottom: 5%;
+              }
+            }
+          }
+
+    }
 
     @media screen and (min-width:992px) and (max-width:1220px){
       .dotted, .dotted2{
@@ -264,10 +288,4 @@ span{
       .contact{
         margin-right:auto !important;
       }
-    }
-
-    footer{
-      background:@dojo-orange;
-      height:25px;
-      width:100%;
     }

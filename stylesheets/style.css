@@ -64,8 +64,14 @@ span {
   color: white;
 }
 .btn-quote a:hover {
-  color: darkgray;
   text-decoration: none;
+}
+.btn-quote:hover {
+  border: 1px solid #ff6202;
+  background-color: white;
+}
+.btn-quote:hover a {
+  color: #ff6202;
 }
 .dottedV {
   margin-left: auto;
@@ -83,52 +89,52 @@ span {
   border: 3px dashed #ff6202;
   width: 5%;
 }
-.jumbotron {
-  margin-top: 0px;
-  border-radius: 0px !important;
-  background: url(../img/top-down-desk.jpg) center no-repeat;
-  background-size: cover;
-}
-.jumbotron .banner {
+.banner {
   width: 100%;
   color: white;
 }
-.jumbotron .banner h1,
-.jumbotron .banner h2,
-.jumbotron .banner h3 {
+.banner h1,
+.banner h2,
+.banner h3 {
   text-align: center;
 }
-.jumbotron .contact {
+.indextron {
+  margin-top: 0px;
+  border-radius: 0px !important;
+  background: url(../img/stock_imgs/top-down-desk.jpg) center no-repeat;
+  background-size: cover;
+}
+.indextron .contact {
   margin-left: auto;
   margin-right: 5%;
   width: 55%;
 }
-.jumbotron .contact [disabled],
-.jumbotron .contact [selected] {
+.indextron .contact [disabled],
+.indextron .contact [selected] {
   color: #ff9500;
 }
-.jumbotron .contact ::-webkit-input-placeholder {
+.indextron .contact ::-webkit-input-placeholder {
   color: #ff9500;
 }
-.jumbotron .contact :-moz-placeholder {
+.indextron .contact :-moz-placeholder {
   /* Firefox 18- */
   color: #ff6202;
 }
-.jumbotron .contact ::-moz-placeholder {
+.indextron .contact ::-moz-placeholder {
   /* Firefox 19+ */
   color: #ff6202;
 }
-.jumbotron .contact :-ms-input-placeholder {
+.indextron .contact :-ms-input-placeholder {
   color: #ff6202;
 }
-.jumbotron .contact label {
+.indextron .contact label {
   margin-top: 2%;
   margin-bottom: 0px;
   color: white;
 }
-.jumbotron .contact input,
-.jumbotron .contact select,
-.jumbotron .contact textarea {
+.indextron .contact input,
+.indextron .contact select,
+.indextron .contact textarea {
   color: #ff6202;
   border: none;
   border-radius: 0px;
@@ -140,14 +146,25 @@ span {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.jumbotron .contact textarea {
+.indextron .contact textarea {
   height: 15%;
 }
-.jumbotron button {
+.indextron button {
   background-color: #ff6202;
   color: white;
   border: none;
   margin-top: 2.5%;
+}
+.success {
+  border-bottom: 4px solid #ff6202;
+  background: url(../img/stock_imgs/iphoney.jpeg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  height: 700px;
+}
+.success .btn-quote {
+  margin-top: 30px;
 }
 section h1 {
   text-align: center;
@@ -210,6 +227,20 @@ section .process i {
 #projects h1 {
   color: white;
 }
+footer {
+  background: #ff6202;
+  height: 25px;
+  width: 100%;
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .success .banner {
+    padding: 2%;
+    background: rgba(55, 55, 55, 0.7) !important;
+  }
+  .success .banner .btn-quote {
+    margin-bottom: 5%;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1220px) {
   .dotted,
   .dotted2 {
@@ -229,9 +260,4 @@ section .process i {
   .contact {
     margin-right: auto !important;
   }
-}
-footer {
-  background: #ff6202;
-  height: 25px;
-  width: 100%;
 }
