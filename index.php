@@ -22,46 +22,42 @@
             </div>
           </div>
           <div class='col-md-5 col-sm-12 col-xs-12'>
-            <div id='quote_form' class='contact'>
-              <i class="fa fa-reply fa-5x arrow-icon"></i>
-              <div class='form-group'>
-                <label for="fname">First <span>&amp;</span> Last Name</label>
-                <input class='form-control' type="text" name="fname" placeholder='ex. John Smith'>
-                <label for="fname">Contact Phone Number</label>
-                <input class='form-control' type="tel" name="pnumber" placeholder='(###) ###-####'>
-                <label for="email">Email</label>
-                <input class='form-control'  type="text" name="email" placeholder='example@techLab.org'>
-                <label for="cname">Company Name</label>
-                <input class='form-control' type="text" name="cname"  placeholder='ex. Massive Dynamic'>
-                <label for="budget">Approx. Project Budget</label>
-                <div class='input-group'>
+            <form action="process.php" method="post">
+              <div id='quote_form' class='contact'>
+                <i class="fa fa-reply fa-5x arrow-icon"></i>
+                <div class='form-group'>
+                  <label for="name">First <span>&amp;</span> Last Name</label>
+                  <input class='form-control' type="text" name="name" placeholder='ex. John Smith'>
+                  <label for="name">Contact Phone Number</label>
+                  <input class='form-control' type="tel" name="phone_number" placeholder='(###) ###-####'>
+                  <label for="email">Email</label>
+                  <input class='form-control'  type="text" name="email" placeholder='example@techLab.org'>
+                  <label for="company_name">Company Name</label>
+                  <input class='form-control' type="text" name="company_name"  placeholder='ex. Massive Dynamic'>
+                  <label for="budget">Approx. Project Budget</label>
                   <select class='form-control' name="budget">
-                  <option selected disabled>select approx. budget</option>
-                  <option>less than $10,000</option>
-                  <option>from $10,000 to $30,000</option>
-                  <option>from $30,000 to $60,000</option>
-                  <option>from $30,000 to $60,000</option>
-                  <option>from $60,000 to $100,000</option>
-                  <option>from $30,000 to $60,000</option>
-                  <option>from $100,000 to $250,000</option>
+                    <option selected disabled>select approx. budget</option>
+                    <option>less than $10,000</option>
+                    <option>from $10,000 to $30,000</option>
+                    <option>from $30,000 to $60,000</option>
+                    <option>from $30,000 to $60,000</option>
+                    <option>from $60,000 to $100,000</option>
+                    <option>from $30,000 to $60,000</option>
+                    <option>from $100,000 to $250,000</option>
                   </select>
-                  <span class="input-group-addon" id="basic-addon1">&#xf0d7;</span>
-                </div>
-                <label for="cname">Company Size</label>
-                <div class='input-group'>
+                  <label for="company_name">Company Size</label>
                   <select class='form-control' name="company_size">
                     <option selected disabled>select company size</option>
-                    <option>1 - 5 employees</option>
-                    <option>6 - 10 employees</option>
-                    <option>10 + employees</option>
+                    <option>1 - 10 employees</option>
+                    <option>10 - 25 employees</option>
+                    <option>25 + employees</option>
                   </select>
-                  <span class="input-group-addon" id="basic-addon1">&#xf0d7;</span>
+                  <label for="description">Project Description</label>
+                  <textarea name="description" class='form-control'></textarea>
+                  <button class='pull-right' name="submit">Submit</button>
                 </div>
-                <label for="proj_desc">Project Description</label>
-                <textarea name="proj_desc" class='form-control'></textarea>
-                <button class='pull-right' name="submit">Submit</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -102,7 +98,7 @@
           <div class='col-md-4'></div>
           <div class='col-md-4'>
             <div class='process'>
-              <div>
+              <div style='display:flex;'>
                 <img src="./img/icons/check.png" alt="test" />
                 <i class='fa fa-4x fa-refresh'></i>
                 <img src="./img/icons/enhance.png" alt="enhance" />

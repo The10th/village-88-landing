@@ -15,6 +15,7 @@ i{
   position:absolute;
   margin-top:-63px;
   transform:rotate(-119deg);
+  -webkit-transform:rotate(-119deg);
 }
 .arrow-msg{
   top:-5px;
@@ -120,6 +121,15 @@ span{
     margin-left:auto;
     margin-right:5%;
     width:55%;
+ //caret for bootstrap input group
+  .input-group-addon{
+    color:@dojo-orange;
+    border:none !important;
+    border-radius:0px;
+    background-color: white;
+    font-family: FontAwesome;
+  }
+
     [disabled], [selected]{
       color: @dojo-orange-light;
     }
@@ -191,6 +201,9 @@ span{
         margin-right:auto;
       }
       .process{
+        div:first-child{
+    display:-webkit-flex;
+        }
         h3{
           text-align:center;
         }
@@ -274,12 +287,20 @@ span{
 
     }
 
+
+    @media screen and (min-width:992px) and (max-width:1415px){
+        .arrow-icon{  
+          font-size: 55px !important;
+        }
+    }    
     @media screen and (min-width:992px) and (max-width:1220px){
-      .dotted, .dotted2{
-        width:60%;
-      }
+        .dotted, .dotted2{
+          width:60%;
+        }
+
 
     }
+
 
     @media screen and (min-width:300px) and (max-width:991px){
       .dotted, .dotted2, .dottedV, .dottedC, .vbreak, .arrow-msg, .arrow-icon{

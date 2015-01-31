@@ -11,6 +11,7 @@ i {
   position: absolute;
   margin-top: -63px;
   transform: rotate(-119deg);
+  -webkit-transform: rotate(-119deg);
 }
 .arrow-msg {
   top: -5px;
@@ -109,6 +110,13 @@ span {
   margin-right: 5%;
   width: 55%;
 }
+.indextron .contact .input-group-addon {
+  color: #ff6202;
+  border: none !important;
+  border-radius: 0px;
+  background-color: white;
+  font-family: FontAwesome;
+}
 .indextron .contact [disabled],
 .indextron .contact [selected] {
   color: #ff9500;
@@ -173,6 +181,9 @@ section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+section .process div:first-child {
+  display: -webkit-flex;
 }
 section .process h3 {
   text-align: center;
@@ -239,6 +250,11 @@ footer {
   }
   .success .banner .btn-quote {
     margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1415px) {
+  .arrow-icon {
+    font-size: 55px !important;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1220px) {
